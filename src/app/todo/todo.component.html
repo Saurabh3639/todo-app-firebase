@@ -1,0 +1,24 @@
+<header>
+  <h3 class="text-center">Todo Application</h3>
+  <div>
+    <input type="text" class="form-control" placeholder="Enter Todo Title" [(ngModel)]="title">
+    <button class="btn btn-success" (click)="save()">Save</button>
+  </div>
+</header>
+
+<main>
+  <ul id="todo-list">
+    <li *ngFor="let todo of todoArray; let i = index">
+      <div class="srno">{{ i+1 }}</div>
+      <div class="title">{{ todo.title }}</div>
+      <div class="actions">
+        <button class="btn btn-outline-warning me-3" (click)="edit(todo)">Edit</button>
+        <button class="btn btn-outline-danger" (click)="delete(todo.id)">Delete</button>
+      </div>
+    </li>
+  </ul>
+</main>
+
+<footer>
+	<p>&copy; 2023 Todo Application | Saurabh Phawade</p>
+</footer>
