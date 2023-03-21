@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
-## URL
+## Application URL
 
 https://todo-app-325fa.web.app/
 
